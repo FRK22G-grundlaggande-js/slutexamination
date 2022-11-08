@@ -20,3 +20,5 @@ async function getPlanets() {
 
 getKey();
 getPlanets();
+
+//Min fork från git
