@@ -4,7 +4,6 @@ const BASE_URL = 'https://fathomless-shelf-54969.herokuapp.com';
 let planets;
 const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
-// API nyckel att använda ifall man enbart siktar på godkänt: solaris-vKkkQHqQboi7c6JF
 
 
 async function getKey() {
@@ -13,7 +12,7 @@ async function getKey() {
 }
 
 async function getPlanets() {
-    const response = await fetch(`${BASE_URL}/bodies/?`, {
+    const response = await fetch(`${BASE_URL}/bodies`, {
         headers: {
             'x-zocom': 'solaris-vKkkQHqQboi7c6JF'
         }
@@ -33,8 +32,9 @@ function createPlanets(){
 
 function createArticle(planets){
     let planetInfo = `<article>
-    '${planets.name}'
-    '${planets.latinName}'
+    <h1>'${planets.name}'</h1>
+    <h2>${planets.latinName}</h2>
+    ${planets.circumference}
     </article> `
  console.log(planetInfo)
  
@@ -43,16 +43,11 @@ function createArticle(planets){
 }
 function displayArticle(){
 
-    for( let planets of planets) {
-       createArticle(planets)
+    for( let planet of planets) {
+       createArticle(planet)
      
     }
 }
-
-
-
-
-
 
 
 function backToPlanets(){
@@ -66,6 +61,6 @@ backToPlanets()
 // Hämta API med nyckel.
 //for each Planet for of loop, loppa ut planeterna till articlar.
 //function displayarticle, visa articklarna på sidan sectonTwo
-// skapa planeterna
+// skapa planeterna js eller html?
 // länka artiklarna till planeterna med klickevent
 // skapa click på sidna som backar tillbaka till planeterna
