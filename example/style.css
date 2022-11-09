@@ -1,0 +1,41 @@
+Body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+body .partOne{
+    flex: 1;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    background: color #e5e5e5; ;
+    background-image: linear-gradient(to right, blue , darkblue);
+}
+h1{
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    margin: 1rem;
+    padding-left: 1rem;
+}
+h6{
+    color: rgba(255, 208, 41, 1);
+    font-family: 'Lora', serif;
+    margin: 1rem;
+    padding-left: 1rem;
+
+}
+body .partOne .headings{
+    align-self: flex-end;
+}
+body .partOne .planets{ 
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+}
+body .partTwo{
+    flex: 1;
+    color: white;
+    background-color: palevioletred;
+    display: block;  /* none; */
+    
+}

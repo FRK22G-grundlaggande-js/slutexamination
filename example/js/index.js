@@ -27,6 +27,10 @@ getKey();
 getPlanets();
 
 
+function createPlanets(){
+    
+}
+
 function createArticle(planets){
     let planetInfo = `<article>
     '${planets.name}'
