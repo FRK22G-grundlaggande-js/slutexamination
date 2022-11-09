@@ -28,7 +28,7 @@ getPlanets();
 
 
 function createPlanets(){
-    
+
 }
 
 function createArticle(planets){
@@ -48,6 +48,7 @@ function displayArticle(){
      
     }
 }
+
 
 
 
