@@ -36,13 +36,30 @@ body .partOne .planets{
 body .partTwo{
     flex: 1;
     color: white;
-    background-color: palevioletred;
     display: block;  /* none; */
     background: url(img/background-starry-sky-8.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 img{
-    width: 2rem;
+    width: 3rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+button{
+    padding: 0.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: rgb(18, 15, 94);
+    border-radius: 5px;
+    border-style: none;
+    font-size: 9px;
+}
+.planets{
+    color: white;
 }
