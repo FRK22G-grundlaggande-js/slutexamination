@@ -71,3 +71,4 @@ backToPlanets()
 // skapa planeterna js eller html?
 // länka artiklarna till planeterna med klickevent
 // skapa click på sidna som backar tillbaka till planeterna
+//
