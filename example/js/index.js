@@ -4,17 +4,20 @@ const BASE_URL = 'https://fathomless-shelf-54969.herokuapp.com';
 let planets;
 const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
+//const figurePlanet = []
 
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
     const data = await response.json();
+    
 }
 
+
 async function getPlanets() {
-    const response = await fetch(`${BASE_URL}/bodies`, {
+    const response = await fetch(`${BASE_URL}/bodies?`, {
         headers: {
-            'x-zocom': 'solaris-vKkkQHqQboi7c6JF'
+            'x-zocom': 'solaris-4wOFSa0vV0WtlFYK'
         }
     });
     const data = await response.json();
@@ -27,6 +30,8 @@ getPlanets();
 
 
 function createPlanets(){
+  
+   
 
 }
 
@@ -57,6 +62,8 @@ function backToPlanets(){
     })
 }
 backToPlanets()
+
+
 
 // Hämta API med nyckel.
 //for each Planet for of loop, loppa ut planeterna till articlar.
