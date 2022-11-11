@@ -4,7 +4,8 @@ let planets;
 const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
 const btn = document.querySelector(`button`)
-const figurePlanets = document.querySelector(`figure`);
+const figurePlanets = document.querySelectorAll(`figure`);
+let fetchedPlanets = []
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
@@ -30,28 +31,43 @@ async function runCode(){
     await getPlanets()
     displayArticle()
     PlanetSystem()
+    //connectArticleToPlanet()
   
   }
 runCode()
 
+/* function connectArticleToPlanet(){
+     planet Id = figurePlanets.currentTarget; // den hämtar id från html
+     const planetId = planets.id
+} */
 
 function PlanetSystem(){
+console.log(figurePlanets)
     figurePlanets.forEach( function(){
+        console.log(figurePlanets)
 
         figurePlanets.addEventListener(`click`, function(){
             console.log(`hej`)
-                sectionTwo.style.display = `block`  
-                sectionOne.style.display = `none`
+            figurePlanets.pusch(fetchedPlanets)//lägg in i array för att jämföra namn med artikel namn
+            console.log(fetchedPlanets)
+
+            sectionTwo.style.display = `block`  
+            sectionOne.style.display = `none`
+
+               
         })
-
+    
     });
-
+    
 } 
+
 
 
 function createArticle(planets){
     let planetInfo = `<article>
-    <h1>${planets.latinName}</h1>
+    <h1>${planets.name}</h1>
+    <h6>${planets.latinName}</h6>
+    <p>${planets.desc}</p>
     </article> `
  console.log(planetInfo)
  
@@ -64,7 +80,6 @@ function displayArticle(){
        createArticle(planet)
     }
 }
-
 
 function backToPlanets(){
     btn.addEventListener(`click`, function(){
@@ -79,5 +94,5 @@ backToPlanets()
 //function displayarticle, visa articklarna på sidan sectonTwo
 // skapa planeterna js eller html?
 // länka artiklarna till planeterna med klickevent
-// skapa click på sidna som backar tillbaka till planeterna
+// skapa click på knapp som backar tillbaka till planeterna
 //
