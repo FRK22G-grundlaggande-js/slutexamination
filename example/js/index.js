@@ -4,9 +4,7 @@ let planets;
 const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
 const btn = document.querySelector(`button`)
-const figurePlanet = document.querySelector(`figurePlanet1`)
-//const figures = []
-//const article = []
+const figurePlanets = document.querySelector(`figure`);
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
@@ -14,38 +12,42 @@ async function getKey() {
 }
 
 async function getPlanets() {
-    const response = await fetch(`${BASE_URL}/bodies?`, {
+    const response = await fetch(`${BASE_URL}/bodies`, {
+        method: "GET",
         headers: {
             'x-zocom': 'solaris-4wOFSa0vV0WtlFYK'
         }
     });
+    
     const data = await response.json();
     planets = data.bodies
     console.log(data);
     console.log(planets)
 }
-async function init(){
+async function runCode(){
 
     await getKey();
-    await getPlanets();
+    await getPlanets()
+    displayArticle()
+    PlanetSystem()
   
   }
-init()
-
-/* function createPlanets(){
-
-   figurePlanet.addEventListener(`click`, function(){
-        figurePlanet.push(figues)
+runCode()
 
 
-         if (figures === article){
-            sectionTwo.style.display = `block`  
-            sectionOne.style.display = `none`
-            displayArticle()
-         }  
-   })
+function PlanetSystem(){
+    figurePlanets.forEach( function(){
 
-} */
+        figurePlanets.addEventListener(`click`, function(){
+            console.log(`hej`)
+                sectionTwo.style.display = `block`  
+                sectionOne.style.display = `none`
+        })
+
+    });
+
+} 
+
 
 function createArticle(planets){
     let planetInfo = `<article>
@@ -62,6 +64,7 @@ function displayArticle(){
        createArticle(planet)
     }
 }
+
 
 function backToPlanets(){
     btn.addEventListener(`click`, function(){
