@@ -42,24 +42,21 @@ runCode()
 } */
 
 function PlanetSystem(){
-console.log(figurePlanets)
-    figurePlanets.forEach( function(){
-        console.log(figurePlanets)
 
         figurePlanets.addEventListener(`click`, function(){
-            console.log(`hej`)
             figurePlanets.pusch(fetchedPlanets)//lägg in i array för att jämföra namn med artikel namn
             console.log(fetchedPlanets)
+            console.log(figurePlanets)
 
             sectionTwo.style.display = `block`  
             sectionOne.style.display = `none`
-
                
         })
     
-    });
     
-} 
+    
+}
+ 
 
 
 
