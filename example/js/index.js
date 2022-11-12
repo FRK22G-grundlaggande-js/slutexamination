@@ -5,7 +5,7 @@ const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
 const btn = document.querySelector(`button`)
 const figurePlanets = document.querySelectorAll(`figure`);
-let fetchedPlanets = []
+//let fetchedPlanets = []
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
@@ -30,41 +30,53 @@ async function runCode(){
     await getKey();
     await getPlanets()
     displayArticle()
-    PlanetSystem()
-    //connectArticleToPlanet()
   
   }
 runCode()
 
-/* function connectArticleToPlanet(){
-     planet Id = figurePlanets.currentTarget; // den hämtar id från html
-     const planetId = planets.id
-} */
+    function connectArticleToPlanet(){
 
-function PlanetSystem(){
+     const solarSystem = figurePlanets.currentTarget; // current target hämtar id från html
+     const planetId = planets.name
+     
 
-        figurePlanets.addEventListener(`click`, function(){
-            figurePlanets.pusch(fetchedPlanets)//lägg in i array för att jämföra namn med artikel namn
-            console.log(fetchedPlanets)
-            console.log(figurePlanets)
+     if (solarSystem === planetId){
+        sectionTwo.style.display = `block`  
+        sectionOne.style.display = `none`
+        
 
-            sectionTwo.style.display = `block`  
-            sectionOne.style.display = `none`
-               
-        })
-    
-    
-    
+     }
+    }
+
+/* function PlanetSystem(){
+
+    for( let figureplanet of figurePlanets){
+        console.log(figurePlanets)
+
+        figurePlanets.addEventListenerAll(`click`, function(figureplanet){
+            
+            //figurePlanets.pusch(fetchedPlanets)//lägg in i array för att jämföra namn med artikel namn
+            //console.log(fetchedPlanets)
+            console.log(`click on planet`)
+
+            //connectArticleToPlanet()
+
+        })   
+    }
 }
- 
-
-
+PlanetSystem() */
 
 function createArticle(planets){
     let planetInfo = `<article>
     <h1>${planets.name}</h1>
     <h6>${planets.latinName}</h6>
-    <p>${planets.desc}</p>
+    <p>${planets.desc}</p><br>
+    
+        <aside>
+        <p>Omkrets ${planets.circumference}</p><p>Kilometer från solen ${planets.distance}</p>
+        <p>Max temperatur ${planets.temp.day}</p><p>Min temperatur ${planets.temp.night}</p>
+        </aside>
+    <p>Månar ${planets.moons}</p>
     </article> `
  console.log(planetInfo)
  

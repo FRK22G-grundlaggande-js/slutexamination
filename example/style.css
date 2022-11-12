@@ -9,9 +9,12 @@ body .partOne{
     display: block;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: color #e5e5e5; ;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
 }
+
 h1{
     color: white;
     font-family: 'Secular One', sans-serif;
@@ -27,6 +30,7 @@ h6{
 }
 body .partOne .headings{
     align-self: flex-end;
+   
 }
 body .partOne .planets{ 
     display: flex;
@@ -62,4 +66,14 @@ button{
 }
 .planets{
     color: white;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside{
+    display: flex;
+    border-top:solid;
+    border-bottom: solid;
 }
