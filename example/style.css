@@ -3,16 +3,17 @@ Body{
     padding: 0;
     display: flex;
     height: 100vh;
+ 
 }
 body .partOne{
     flex: 1;
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: color #e5e5e5; ;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+  
 }
 
 h1{
@@ -28,26 +29,20 @@ h6{
     padding-left: 1rem;
 
 }
-body .partOne .headings{
-    align-self: flex-end;
-   
-}
 body .partOne .planets{ 
     display: flex;
-    align-items: space-between;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 body .partTwo{
     flex: 1;
     color: white;
-    display: block;  /* none; block */
     background: url(img/background-starry-sky-8.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 img{
     width: 3rem;
@@ -68,8 +63,9 @@ button{
     border-style: none;
     font-size: 9px;
 }
-.planets{
-    color: white;
+.headings{
+    position: absolute;
+    right: 1rem;
 }
 article{
     display: flex;
@@ -86,7 +82,77 @@ aside{
 .buttonBack{
     align-self: flex-start;
 }
-#solis{
+#Solis{
     position: fixed;
-  /*   transform rotate 60 degres */
+    width: 1250px;
+    height: 1250px;
+    left: -1200px;
+    top: -189px;
+    border-radius: 50%;
+    background: #FFD029;
+    box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
 }
+#Mercurialis{
+    width: 14px;
+    height: 14px;
+    background: #888888;
+    border-radius: 50%;
+}
+#venus{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #E7CDCD;    
+}
+#Tellus{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #428ED5;
+
+}
+#Mars{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #EF5F5F;
+
+}
+#Lovis{
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    background: #E29468;
+
+}
+#Sarturnus{
+    width: 144px;
+    height: 144px; 
+    border-radius: 50%;
+    background: #C7AA72;
+}
+
+#Uranus{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: #C9D4F1;
+
+}
+#Neptunus{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: #7A91A7;
+}
+/* .sun{
+border-radius: 50%;
+position: absolute;
+width: 1278px;
+height: 1278px;
+left: -1160px;
+top: -189px;
+
+background: #bcbab2;
+box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
+} */

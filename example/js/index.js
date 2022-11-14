@@ -1,22 +1,24 @@
-//let key = 
+
 const BASE_URL = 'https://fathomless-shelf-54969.herokuapp.com';
 let planets;
 let planetInfo;
 const sectionTwo = document.querySelector(`.partTwo`)
 const sectionOne = document.querySelector(`.partOne`)
-const btn = document.querySelector(`.buttonBack`)
+
 const figurePlanets = document.querySelectorAll(`figure`);
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
-    const data = await response.json();
+    const data = await response.json(); //nycklar i en array
+    //return data.key;
+   
 }
 
 async function getPlanets() {
     const response = await fetch(`${BASE_URL}/bodies`, {
         method: "GET",
         headers: {
-            'x-zocom': 'solaris-4wOFSa0vV0WtlFYK'
+            'x-zocom': 'solaris-4wOFSa0vV0WtlFYK' //  key
         }
     });
     
@@ -37,7 +39,7 @@ runCode()
             const clickedPlanet =  planets[index]//planeten du klickat på
             console.log(index)
             createArticle(clickedPlanet)
-            sectionTwo.style.display = `block`  
+            sectionTwo.style.display = `flex`  
             sectionOne.style.display = `none`
 
         })
@@ -55,21 +57,23 @@ function createArticle(planets){
         <p>Max temperatur ${planets.temp.day}</p><p>Min temperatur ${planets.temp.night}</p>
         </aside>
     <p>Månar: ${planets.moons}</p>
+    <div class="sun">sun</div>
     <button class="buttonBack">Back</button>
     <footer><img src="img/originalzocom.png" alt=""></footer> 
     </article> `
- console.log(planetInfo)
  
  sectionTwo.insertAdjacentHTML(`beforeend`, planetInfo)
+ backToPlanets()
+
 }
 
 function backToPlanets(){
-    btn.addEventListener(`click`, function(){
+    const backBtn = document.querySelector(`.buttonBack`)
+    backBtn.addEventListener(`click`, function(){
         sectionTwo.style.display = `none`  
-        sectionOne.style.display = `block`
+        sectionOne.style.display = `flex`
     })
 }
-backToPlanets()
 
 // Hämta API med nyckel.
 // for each Planet for of loop, loppa ut planeterna till articlar.
