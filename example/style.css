@@ -152,20 +152,35 @@ aside{
     height: 144px; 
     border-radius: 50%;
     background: #C7AA72;
-}  
+}
 .saturnusRing{
-    display: flex;
-    align-self: center;
-   /*  position: fixed; */
+    position: absolute;
     width: 218.23px;
     height: 5.5px;
-   /*  left: 500px;
-    top:500px; */
-    border-radius:50%;
+    left:722px ;
+    top: 380px;
+  /*   left: 851.13px;
+    top: 502.18px; */
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.4);
     transform: rotate(-30deg);
-    opacity:0.5 ;
 }
+.saturn-contaier{
+    position: relative;
+}
+
+
+/* .Sarturnus::before{
+    content: attr(figure);
+    align-self: center;
+    width: 218.23px;
+    height: 5.5px;
+    border-radius:50%;
+    background-color: #888888;
+    transform: rotate(-30deg);
+    opacity:0.5 ;
+}  */ 
+
 #Uranus{
     width: 66px;
     height: 66px;
