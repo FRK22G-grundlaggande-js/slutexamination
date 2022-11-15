@@ -45,7 +45,7 @@ body .partTwo{
     background: url(img/background-starry-sky-8.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
