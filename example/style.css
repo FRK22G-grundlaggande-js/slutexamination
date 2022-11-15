@@ -131,21 +131,18 @@ aside{
     height: 28px;
     border-radius: 50%;
     background: #428ED5;
-
 }
 #Mars{
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background: #EF5F5F;
-
 }
 #Lovis{
     width: 188px;
     height: 188px;
     border-radius: 50%;
     background: #E29468;
-
 }
 #Sarturnus{
     width: 144px;
@@ -159,8 +156,6 @@ aside{
     height: 5.5px;
     left:722px ;
     top: 380px;
-  /*   left: 851.13px;
-    top: 502.18px; */
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.4);
     transform: rotate(-30deg);
@@ -168,8 +163,6 @@ aside{
 .saturn-contaier{
     position: relative;
 }
-
-
 /* .Sarturnus::before{
     content: attr(figure);
     align-self: center;
@@ -196,7 +189,6 @@ aside{
 .blueSun{
     border-radius: 50%;
     position: absolute;
-
     width: 1200px;
     height: 1200px;
     left: -1200px;
@@ -217,7 +209,6 @@ aside{
     top: -222px;
     background: rgba(66, 142, 213, 0.1);
     border-radius: 50%;
-
 }
 .blueSunLighter{
     position: absolute;
