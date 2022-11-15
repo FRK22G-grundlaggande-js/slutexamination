@@ -49,16 +49,18 @@ function createArticle(planets){
 
     sectionTwo.innerHTML = ``;
     let planetInfo = `<article  class="${planets.name}">
-    <h1>${planets.name}</h1>
-    <h6>${planets.latinName}</h6>
+    <h1 class="headerA">${planets.name}</h1>
+    <h6 class="headerB">${planets.latinName}</h6>
     <p>${planets.desc}</p><br>
         <aside>
-        <p>Omkrets ${planets.circumference}</p><p>Kilometer från solen ${planets.distance}</p><br>
-        <p>Max temperatur ${planets.temp.day}</p><p>Min temperatur ${planets.temp.night}</p>
+        <p class="circumference"><span style='font-weight:bold'>Omkrets</span><br> ${planets.circumference}</p><p class="fromSun"><span style='font-weight:bold'>Kilometer från solen </span><br> ${planets.distance} km</p>
+        <p><span style='font-weight:bold'>Max temperatur</span><br> ${planets.temp.day}</p><p class="minTemp" ><span style='font-weight:bold'>Min temperatur</span><br> ${planets.temp.night}</p>
         </aside>
-    <p>Månar: ${planets.moons}</p>
-    <div class="sun">sun</div>
+    <div class="moons"> <span style='font-weight:bold'>Månar </span> <br> ${planets.moons.join(' ')} </div>
     <button class="buttonBack">Back</button>
+    <figure class="blueSun"></figure>
+    <figure class="blueSunLight"></figure>
+    <figure class="blueSunLighter"></figure>
     <footer><img src="img/originalzocom.png" alt=""></footer> 
     </article> `
  
