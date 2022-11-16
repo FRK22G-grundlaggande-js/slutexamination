@@ -61,7 +61,7 @@ function createArticle(planets){
     <figure class="blueSun"></figure>
     <figure class="blueSunLight"></figure>
     <figure class="blueSunLighter"></figure>
-    <footer><img src="img/originalzocom.png" alt=""></footer> 
+    <footer class="zocom"><img src="img/originalzocom.png" alt=""></footer> 
     </article> `
  
  sectionTwo.insertAdjacentHTML(`beforeend`, planetInfo)
