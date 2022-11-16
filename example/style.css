@@ -44,7 +44,7 @@ body .partOne .planets{
 body .partTwo{
     flex: 1;
     color: white;
-   background: url(img/background-starry-sky-8.jpg);
+    background: url(img/background-starry-sky-8.jpg);
     background-size: cover;
     background-position: center;
     display: none;
@@ -96,6 +96,7 @@ aside{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    line-height: 1.5;
 }
 .fromSun{
     grid-column: 4 /span 6;
