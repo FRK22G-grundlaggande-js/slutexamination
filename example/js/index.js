@@ -11,7 +11,6 @@ async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
     const data = await response.json(); //nycklar i en array
     //return data.key;
-   
 }
 
 async function getPlanets() {
