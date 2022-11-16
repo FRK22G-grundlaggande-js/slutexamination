@@ -2,7 +2,8 @@ Body{
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh;
+   
+   
 }
 body .partOne{
     flex: 1;
@@ -12,6 +13,10 @@ body .partOne{
     justify-content: center;
     background: color #e5e5e5; 
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+    max-width: 2000px;
+    min-width: 600px;
+    height: 100vh;
+
 }
 h1{
     color: white;
@@ -30,7 +35,6 @@ h6{
     font-family: 'Lora', serif;
     margin: 1rem;
     font-size: 2rem;
-   
 }
 body .partOne .planets{ 
     display: flex;
@@ -48,7 +52,7 @@ body .partTwo{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+   
 }
 img{
     width: 3rem;
@@ -81,6 +85,7 @@ article{
     padding: 3rem;
     font-family:'Roboto Condensed', sans-serif;
     max-width: 600px;
+    min-height: 300px;
 }
 aside{
     border-top:solid;
@@ -108,10 +113,18 @@ aside{
 }
 #Solis{
     position: fixed;
-    width: 1200px;
+
+
+    width: 1278px;
+    height: 1278px;
+    left: -1160px;
+    top: -189px;
+
+
+    /* width: 1200px;
     height: 1200px;
     left: -1200px;
-    top: -320px;
+    top: -320px; */
     border-radius: 50%;
     background: #FFD029;
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
@@ -198,14 +211,14 @@ aside{
     left: -1200px;
     top: -320px;
 
-   /*  width: 1278px;
+   /* width: 1278px;
     height: 1278px;
     left: -1160px;
     top: -189px; */
     background:rgb(56, 159, 223);
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
 }
-.blueSunLight{
+/* .blueSunLight{
     position: absolute;
     width: 1340px;
     height: 1340px;
@@ -223,3 +236,4 @@ aside{
     border-radius: 50%;
     background: rgba(66, 142, 213, 0.06);
 }
+ */
