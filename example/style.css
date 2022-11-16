@@ -44,9 +44,9 @@ body .partOne .planets{
 body .partTwo{
     flex: 1;
     color: white;
-/*  background: url(img/background-starry-sky-8.jpg);
+   background: url(img/background-starry-sky-8.jpg);
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     display: none;
     flex-direction: column;
     align-items: center;
