@@ -39,7 +39,7 @@ body .partOne .planets{
     align-items: center;
     justify-content: space-between;
     padding: 3rem;
-    padding-left: 10rem;
+    padding-left: 9rem;
     width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -57,7 +57,6 @@ body .partTwo{
     height: fit-content;
     padding-left: 9rem;
     height: 100vh;
-
 }
 img{
     width: 3rem;
@@ -123,8 +122,8 @@ aside{
     position: fixed;
     width: 1278px;
     height: 1278px;
-    left: -1160px;
-    top: -189px;
+    left: -1220px;
+    top: -320px;
     border-radius: 500rem;
     background: #FFD029;
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
@@ -205,8 +204,8 @@ aside{
     position: absolute;
     width: 1278px;
     height: 1278px;
-    left: -1160px;
-    top: -189px;
+    left: -1220px;
+    top: -320px;
     background:rgb(56, 159, 223);
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
     opacity: 0.5;
@@ -215,17 +214,17 @@ aside{
     position: absolute;
     width: 1340px;
     height: 1340px;
-    left: -1170px;
-    top: -222px;
+    left: -1245px;
+    top: -360px;
     background: rgba(66, 142, 213, 0.1);
     border-radius: 50%;
 }
 .blueSunLighter{
     position: absolute;
     width: 1404px;
-    height: 1404px;
-    left: -1184px;
-    top: -254px;
+    height: 1380px;
+    left: -1265px;
+    top: -370px;
     border-radius: 50%;
     background: rgba(66, 142, 213, 0.06);
 }
