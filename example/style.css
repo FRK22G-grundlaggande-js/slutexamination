@@ -57,6 +57,7 @@ body .partTwo{
     height: fit-content;
     padding-left: 9rem;
     height: 100vh;
+    
 }
 img{
     width: 3rem;
@@ -66,7 +67,6 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    margin: 1rem;
 }
 .zomcom{
     padding: 1rem;
