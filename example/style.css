@@ -5,7 +5,6 @@ body{
     display: flex;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
     overflow: hidden;
-  
 }
 body .partOne{
     flex: 1;
@@ -56,7 +55,9 @@ body .partTwo{
     align-items: center;
     justify-content: center;
     height: fit-content;
-    /* min-height: 600px; */
+    padding-left: 9rem;
+    height: 100vh;
+
 }
 img{
     width: 3rem;
@@ -91,8 +92,7 @@ article{
     flex-direction: column;
     padding: 3rem;
     font-family:'Roboto Condensed', sans-serif;
-    max-width: 600px;
-    min-height: 300px;
+    height: 100%;
 }
 aside{
     border-top:solid;
@@ -125,7 +125,7 @@ aside{
     height: 1278px;
     left: -1160px;
     top: -189px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #FFD029;
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
 }
