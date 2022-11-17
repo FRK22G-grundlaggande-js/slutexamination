@@ -1,8 +1,11 @@
-Body{
+
+body{
     margin: 0;
     padding: 0;
     display: flex;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+    overflow: hidden;
+  
 }
 body .partOne{
     flex: 1;
@@ -12,6 +15,7 @@ body .partOne{
     justify-content: center;
     background: color #e5e5e5; 
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+    width: 100%;
 }
 h1{
     color: white;
@@ -35,9 +39,11 @@ body .partOne .planets{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem;
-    min-width: 1500px;
-    margin-left: 9rem;
+    padding: 3rem;
+    padding-left: 10rem;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
 }
 body .partTwo{
     flex: 1;
@@ -124,45 +130,51 @@ aside{
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
 }
 #Mercurialis{
+   
     width: 14px;
     height: 14px;
     background: #888888;
-    border-radius: 50%;
+    border-radius: 500rem;
+    
 }
 #venus{
     width: 26px;
     height: 26px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #E7CDCD;    
+    
 }
 #Tellus{
     width: 28px;
     height: 28px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #428ED5;
+    
 }
 #Mars{
     width: 14px;
     height: 14px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #EF5F5F;
+   
 }
 #Lovis{
     width: 188px;
     height: 188px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #E29468;
 }
 #Sarturnus{
     width: 144px;
     height: 144px; 
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #C7AA72;
+ 
 }
 .saturnusRing{
     width: 218.23px;
     height: 5.5px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: rgba(255, 255, 255, 0.4);
     transform: rotate(-30deg);
 }
@@ -177,6 +189,7 @@ aside{
 .saturnusRing{
     position: absolute;
     top: 50%;
+    
 }
 .saturn-contaier{
     position: relative;
@@ -185,7 +198,7 @@ aside{
 #Uranus{
     width: 66px;
     height: 66px;
-    border-radius: 50%;
+    border-radius: 500rem;
     background: #C9D4F1;
 }
 #Neptunus{
@@ -222,4 +235,8 @@ aside{
     top: -254px;
     border-radius: 50%;
     background: rgba(66, 142, 213, 0.06);
+}
+figure{
+    margin: 0;
+    padding: 0;
 }
