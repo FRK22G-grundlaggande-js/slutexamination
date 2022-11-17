@@ -4,7 +4,6 @@ Body{
     display: flex;
     height: 100vh;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
-    /* overflow: hidden */
 }
 body .partOne{
     flex: 1;
@@ -52,7 +51,6 @@ body .partTwo{
     align-items: center;
     justify-content: center;
     height: fit-content;
-    overflow: hidden;
 }
 img{
     width: 3rem;
