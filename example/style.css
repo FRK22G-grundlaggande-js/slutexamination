@@ -2,7 +2,6 @@ Body{
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh;
     background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
 }
 body .partOne{
@@ -51,6 +50,7 @@ body .partTwo{
     align-items: center;
     justify-content: center;
     height: fit-content;
+    /* min-height: 600px; */
 }
 img{
     width: 3rem;
@@ -172,7 +172,7 @@ aside{
    border-radius:50%;
    opacity:0.5 ;
    width: 218.23px;
-    height: 5.5px;
+   height: 5.5px;
 } */
 .saturnusRing{
     position: absolute;

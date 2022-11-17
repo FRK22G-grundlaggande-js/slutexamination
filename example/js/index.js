@@ -76,9 +76,3 @@ function backToPlanets(){
     })
 }
 
-// Hämta API med nyckel.
-// for each Planet for of loop, loppa ut planeterna till articlar.
-// function displayarticle, visa articklarna på sidan sectonTwo
-// skapa planeterna js eller html?
-// länka artiklarna till planeterna med klickevent, 
-// skapa click på knapp som backar tillbaka till planeterna
