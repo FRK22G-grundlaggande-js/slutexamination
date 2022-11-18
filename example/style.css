@@ -181,8 +181,9 @@ aside{
 } */
 .saturnusRing{
     position: absolute;
-    top: 46%;
-    left: 60%;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -70px;
 }
 .saturn-contaier{
     position: relative;
